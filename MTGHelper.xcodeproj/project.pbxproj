@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		734E42731D254F1E00575101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42721D254F1E00575101 /* AppDelegate.swift */; };
-		734E42751D254F1E00575101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42741D254F1E00575101 /* ViewController.swift */; };
-		734E42781D254F1E00575101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734E42761D254F1E00575101 /* Main.storyboard */; };
-		734E427A1D254F1E00575101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734E42791D254F1E00575101 /* Assets.xcassets */; };
 		734E427D1D254F1E00575101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734E427B1D254F1E00575101 /* LaunchScreen.storyboard */; };
 		734E42881D254F1E00575101 /* MTGHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42871D254F1E00575101 /* MTGHelperTests.swift */; };
+		734E42A41D26BBA900575101 /* CardsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42A21D26BBA900575101 /* CardsSearchViewController.swift */; };
+		734E42A51D26BBA900575101 /* CardsSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 734E42A31D26BBA900575101 /* CardsSearchViewController.xib */; };
+		B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */; };
+		B561E7E4E82B24E019C8BDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561E61C59A4EA67DA02E983 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +27,15 @@
 
 /* Begin PBXFileReference section */
 		734E426F1D254F1D00575101 /* MTGHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTGHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		734E42721D254F1E00575101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		734E42741D254F1E00575101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		734E42771D254F1E00575101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		734E42791D254F1E00575101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		734E427C1D254F1E00575101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		734E427E1D254F1E00575101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		734E42831D254F1E00575101 /* MTGHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTGHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		734E42871D254F1E00575101 /* MTGHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGHelperTests.swift; sourceTree = "<group>"; };
 		734E42891D254F1E00575101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734E42A21D26BBA900575101 /* CardsSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSearchViewController.swift; sourceTree = "<group>"; };
+		734E42A31D26BBA900575101 /* CardsSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardsSearchViewController.xib; sourceTree = "<group>"; };
+		B561E219EB1F8292FE2B0353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		B561E61C59A4EA67DA02E983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +77,9 @@
 		734E42711D254F1E00575101 /* MTGHelper */ = {
 			isa = PBXGroup;
 			children = (
-				734E42721D254F1E00575101 /* AppDelegate.swift */,
-				734E42741D254F1E00575101 /* ViewController.swift */,
-				734E42761D254F1E00575101 /* Main.storyboard */,
-				734E42791D254F1E00575101 /* Assets.xcassets */,
 				734E427B1D254F1E00575101 /* LaunchScreen.storyboard */,
-				734E427E1D254F1E00575101 /* Info.plist */,
+				B561E27BE7FFEFFF58A50FA4 /* Source */,
+				B561ECE04C702B096F873FF8 /* Supporting Files */,
 			);
 			path = MTGHelper;
 			sourceTree = "<group>";
@@ -94,6 +91,49 @@
 				734E42891D254F1E00575101 /* Info.plist */,
 			);
 			path = MTGHelperTests;
+			sourceTree = "<group>";
+		};
+		B561E27BE7FFEFFF58A50FA4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */,
+				B561EF5B32E7FDA29C29E8D3 /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B561EAAD6DA8A536B3A4C6C5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B561EE5BE0A9E2EAC323EFFD /* Search */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B561ECE04C702B096F873FF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B561E61C59A4EA67DA02E983 /* Assets.xcassets */,
+				B561E219EB1F8292FE2B0353 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B561EE5BE0A9E2EAC323EFFD /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				734E42A21D26BBA900575101 /* CardsSearchViewController.swift */,
+				734E42A31D26BBA900575101 /* CardsSearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B561EF5B32E7FDA29C29E8D3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B561EAAD6DA8A536B3A4C6C5 /* View Controllers */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +217,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734E42A51D26BBA900575101 /* CardsSearchViewController.xib in Resources */,
 				734E427D1D254F1E00575101 /* LaunchScreen.storyboard in Resources */,
-				734E427A1D254F1E00575101 /* Assets.xcassets in Resources */,
-				734E42781D254F1E00575101 /* Main.storyboard in Resources */,
+				B561E7E4E82B24E019C8BDAF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				734E42751D254F1E00575101 /* ViewController.swift in Sources */,
-				734E42731D254F1E00575101 /* AppDelegate.swift in Sources */,
+				B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */,
+				734E42A41D26BBA900575101 /* CardsSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +261,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		734E42761D254F1E00575101 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				734E42771D254F1E00575101 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		734E427B1D254F1E00575101 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -327,7 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MTGHelper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MTGHelper/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.MTGHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,7 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MTGHelper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MTGHelper/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.MTGHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,7 +411,7 @@
 				734E428B1D254F1E00575101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		734E428C1D254F1E00575101 /* Build configuration list for PBXNativeTarget "MTGHelper" */ = {
 			isa = XCConfigurationList;
@@ -388,6 +420,7 @@
 				734E428E1D254F1E00575101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		734E428F1D254F1E00575101 /* Build configuration list for PBXNativeTarget "MTGHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +429,7 @@
 				734E42911D254F1E00575101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

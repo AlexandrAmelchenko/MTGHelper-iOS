@@ -15,6 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        let searchControl = CardsSearchViewController(nibName: "CardsSearchViewController", bundle:  nil)
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = searchControl
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

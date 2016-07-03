@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  CardsSearchViewController.swift
 //  MTGHelper
 //
-//  Created by Alex Amelchenko on 30/06/16.
+//  Created by Alex Amelchenko on 01/07/16.
 //  Copyright © 2016 Alex Amelchenko. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class CardsSearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-
 }
-
