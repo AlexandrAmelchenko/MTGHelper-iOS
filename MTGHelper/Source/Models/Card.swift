@@ -11,5 +11,6 @@ import Foundation
 class Card: NSObject {
     
     var baseName : String?
-
+    var imageSubUrlString : String?
+    
 }

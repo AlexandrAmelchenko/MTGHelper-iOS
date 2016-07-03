@@ -24,6 +24,7 @@
 		734E42C31D2970D900575101 /* ServerCardsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42C21D2970D900575101 /* ServerCardsList.swift */; };
 		734E42C61D2982B300575101 /* SearchCardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42C41D2982B300575101 /* SearchCardsTableViewCell.swift */; };
 		734E42C71D2982B400575101 /* SearchCardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 734E42C51D2982B300575101 /* SearchCardsTableViewCell.xib */; };
+		734E42C91D29937D00575101 /* UIImageViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42C81D29937D00575101 /* UIImageViewAdditions.swift */; };
 		96C845F119C2CC94E0B0E5E0 /* Pods_MTGHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6471808C217106E91BDB2830 /* Pods_MTGHelper.framework */; };
 		B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */; };
 		B561E7E4E82B24E019C8BDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561E61C59A4EA67DA02E983 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		734E42C21D2970D900575101 /* ServerCardsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCardsList.swift; sourceTree = "<group>"; };
 		734E42C41D2982B300575101 /* SearchCardsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCardsTableViewCell.swift; sourceTree = "<group>"; };
 		734E42C51D2982B300575101 /* SearchCardsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCardsTableViewCell.xib; sourceTree = "<group>"; };
+		734E42C81D29937D00575101 /* UIImageViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewAdditions.swift; sourceTree = "<group>"; };
 		A9BCA063800048BB9A2A4E61 /* Pods-MTGHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTGHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTGHelper/Pods-MTGHelper.release.xcconfig"; sourceTree = "<group>"; };
 		B561E219EB1F8292FE2B0353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		B561E61C59A4EA67DA02E983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				734E42BC1D2961CA00575101 /* ErrorTypeAdditions.swift */,
 				734E42BE1D29626700575101 /* UIViewControllerAdditions.swift */,
+				734E42C81D29937D00575101 /* UIImageViewAdditions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734E42C91D29937D00575101 /* UIImageViewAdditions.swift in Sources */,
 				B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */,
 				734E42B11D294F6600575101 /* Config.swift in Sources */,
 				734E42AF1D293E5200575101 /* DeckbrewAPI.swift in Sources */,

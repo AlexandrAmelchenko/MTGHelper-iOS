@@ -20,7 +20,7 @@ protocol CardsSearchViewControllerInterface: class {
     
 }
 
-class CardsSearchViewController: UIViewController, CardsSearchViewControllerInterface, UITableViewDelegate, UITableViewDataSource {
+class CardsSearchViewController: UIViewController, CardsSearchViewControllerInterface, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     var viewModel = CardsSearchViewModel()
     
@@ -35,17 +35,22 @@ class CardsSearchViewController: UIViewController, CardsSearchViewControllerInte
             self.tableView.registerNib(UINib(nibName: searchItemCellIdentifier, bundle: nil), forCellReuseIdentifier: searchItemCellIdentifier)
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.searchController = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     @IBAction func searchButtonClicked(sender: AnyObject) {
+        self.view.endEditing(true)
+        startSearch()
+    }
+    
+    func startSearch() {
         if (searchTextField.text?.characters.count < 1) {
             //TODO : move text checking to viewmodel and add additional checks
             showNoTextAlert()
@@ -91,5 +96,13 @@ class CardsSearchViewController: UIViewController, CardsSearchViewControllerInte
         cell.selectionStyle = .None
         return cell
     }
-
+    
+    //MARK: TextField
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        startSearch()
+        return true
+    }
+    
 }

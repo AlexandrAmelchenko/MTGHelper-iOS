@@ -12,6 +12,7 @@ import ObjectMapper
 class ServerCard: Mappable {
     
     var name : String?
+    var imageUrl : String?
     
     init(){
     }
@@ -22,6 +23,7 @@ class ServerCard: Mappable {
     
     func mapping(map: Map) {
         name <- map["name"]
+        imageUrl <- map["imageUrl"]
     }
     
 }
@@ -30,6 +32,10 @@ extension ServerCard {
     func toLocal() -> Card {
         let card = Card()
         card.baseName = name
+        if let imageFullUrl = imageUrl {
+            let fullUrlArr = imageFullUrl.characters.split{$0 == "/"}.map(String.init)
+            card.imageSubUrlString = fullUrlArr[fullUrlArr.endIndex - 1]
+        }
         return card
     }
 }

@@ -11,6 +11,7 @@ import UIKit
 class SearchCardsTableViewCell: UITableViewCell {
     
     @IBOutlet var nameLabel : UILabel!
+    @IBOutlet var previewImageView : UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +22,8 @@ class SearchCardsTableViewCell: UITableViewCell {
     }
     
     func bindWithCard(card : Card) {
-        self.nameLabel.text = card.baseName
+        nameLabel.text = card.baseName
+        previewImageView.load(card.imageSubUrlString, placeholderImageName: "cardBack")
     }
     
 }

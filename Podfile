@@ -11,6 +11,7 @@ target 'MTGHelper' do
     pod 'RKDropdownAlert', '~> 0.3'
     pod 'MBProgressHUD', '~> 0.9.2'
     pod 'TPKeyboardAvoiding', '~> 1.3'
+    pod 'Kingfisher', '~>2.4.1'
     pod 'Moya/RxSwift'
 
 end
