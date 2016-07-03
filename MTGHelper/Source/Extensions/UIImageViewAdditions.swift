@@ -16,7 +16,6 @@ extension UIImageView {
         self.image = placeholderImage
         if let finalUrlString = urlString {
             let url = imageUrl(finalUrlString)
-            print(url)
             self.kf_setImageWithURL(url, placeholderImage: placeholderImage)
         }
     }

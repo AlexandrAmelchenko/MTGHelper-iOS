@@ -97,6 +97,12 @@ class CardsSearchViewController: UIViewController, CardsSearchViewControllerInte
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let detailsController = CardDetailsViewController(nibName: "CardDetailsViewController", bundle: nil)
+        detailsController.viewModel.card = viewModel.cards[indexPath.row]
+        self.navigationController?.pushViewController(detailsController, animated: true)
+    }
+    
     //MARK: TextField
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

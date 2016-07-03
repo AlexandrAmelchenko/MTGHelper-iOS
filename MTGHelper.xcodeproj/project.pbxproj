@@ -25,6 +25,9 @@
 		734E42C61D2982B300575101 /* SearchCardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42C41D2982B300575101 /* SearchCardsTableViewCell.swift */; };
 		734E42C71D2982B400575101 /* SearchCardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 734E42C51D2982B300575101 /* SearchCardsTableViewCell.xib */; };
 		734E42C91D29937D00575101 /* UIImageViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42C81D29937D00575101 /* UIImageViewAdditions.swift */; };
+		734E42CD1D299E6D00575101 /* CardDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42CC1D299E6D00575101 /* CardDetailsViewModel.swift */; };
+		734E42D01D299E9B00575101 /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42CE1D299E9B00575101 /* CardDetailsViewController.swift */; };
+		734E42D11D299E9B00575101 /* CardDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 734E42CF1D299E9B00575101 /* CardDetailsViewController.xib */; };
 		96C845F119C2CC94E0B0E5E0 /* Pods_MTGHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6471808C217106E91BDB2830 /* Pods_MTGHelper.framework */; };
 		B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */; };
 		B561E7E4E82B24E019C8BDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561E61C59A4EA67DA02E983 /* Assets.xcassets */; };
@@ -63,6 +66,9 @@
 		734E42C41D2982B300575101 /* SearchCardsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCardsTableViewCell.swift; sourceTree = "<group>"; };
 		734E42C51D2982B300575101 /* SearchCardsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCardsTableViewCell.xib; sourceTree = "<group>"; };
 		734E42C81D29937D00575101 /* UIImageViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewAdditions.swift; sourceTree = "<group>"; };
+		734E42CC1D299E6D00575101 /* CardDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsViewModel.swift; sourceTree = "<group>"; };
+		734E42CE1D299E9B00575101 /* CardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsViewController.swift; sourceTree = "<group>"; };
+		734E42CF1D299E9B00575101 /* CardDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailsViewController.xib; sourceTree = "<group>"; };
 		A9BCA063800048BB9A2A4E61 /* Pods-MTGHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTGHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTGHelper/Pods-MTGHelper.release.xcconfig"; sourceTree = "<group>"; };
 		B561E219EB1F8292FE2B0353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		B561E61C59A4EA67DA02E983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,8 +155,17 @@
 			isa = PBXGroup;
 			children = (
 				B561E59C1AADB1310B3CC7EA /* Search */,
+				B561E10317E437FD88BE03D5 /* Card Details */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B561E10317E437FD88BE03D5 /* Card Details */ = {
+			isa = PBXGroup;
+			children = (
+				734E42CC1D299E6D00575101 /* CardDetailsViewModel.swift */,
+			);
+			path = "Card Details";
 			sourceTree = "<group>";
 		};
 		B561E1D263B53AD4FFD715F6 /* Server */ = {
@@ -214,6 +229,15 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		B561E9371AB3F38331B16AF5 /* Card Details */ = {
+			isa = PBXGroup;
+			children = (
+				734E42CE1D299E9B00575101 /* CardDetailsViewController.swift */,
+				734E42CF1D299E9B00575101 /* CardDetailsViewController.xib */,
+			);
+			path = "Card Details";
+			sourceTree = "<group>";
+		};
 		B561E9BB1A76F5BD0D1D50B9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				B561EE5BE0A9E2EAC323EFFD /* Search */,
+				B561E9371AB3F38331B16AF5 /* Card Details */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -361,6 +386,7 @@
 				734E42A51D26BBA900575101 /* CardsSearchViewController.xib in Resources */,
 				734E427D1D254F1E00575101 /* LaunchScreen.storyboard in Resources */,
 				B561E7E4E82B24E019C8BDAF /* Assets.xcassets in Resources */,
+				734E42D11D299E9B00575101 /* CardDetailsViewController.xib in Resources */,
 				734E42C71D2982B400575101 /* SearchCardsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				734E42C91D29937D00575101 /* UIImageViewAdditions.swift in Sources */,
+				734E42D01D299E9B00575101 /* CardDetailsViewController.swift in Sources */,
 				B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */,
 				734E42B11D294F6600575101 /* Config.swift in Sources */,
 				734E42AF1D293E5200575101 /* DeckbrewAPI.swift in Sources */,
@@ -441,6 +468,7 @@
 				734E42B51D29506700575101 /* CustomError.swift in Sources */,
 				734E42BB1D295BFC00575101 /* CardsSearchService.swift in Sources */,
 				734E42B71D2957CE00575101 /* ServerCard.swift in Sources */,
+				734E42CD1D299E6D00575101 /* CardDetailsViewModel.swift in Sources */,
 				734E42C61D2982B300575101 /* SearchCardsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
