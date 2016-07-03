@@ -4,6 +4,14 @@
 use_frameworks!
 
 target 'MTGHelper' do
+    
+    pod 'RxSwift', '~> 2.0'
+    pod 'Moya', '~> 6.5'
+    pod 'ObjectMapper', '~> 1.3'
+    pod 'RKDropdownAlert', '~> 0.3'
+    pod 'MBProgressHUD', '~> 0.9.2'
+    pod 'TPKeyboardAvoiding', '~> 1.3'
+    pod 'Moya/RxSwift'
 
 end
 

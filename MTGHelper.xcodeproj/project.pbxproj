@@ -11,6 +11,16 @@
 		734E42881D254F1E00575101 /* MTGHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42871D254F1E00575101 /* MTGHelperTests.swift */; };
 		734E42A41D26BBA900575101 /* CardsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42A21D26BBA900575101 /* CardsSearchViewController.swift */; };
 		734E42A51D26BBA900575101 /* CardsSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 734E42A31D26BBA900575101 /* CardsSearchViewController.xib */; };
+		734E42AF1D293E5200575101 /* DeckbrewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42AE1D293E5100575101 /* DeckbrewAPI.swift */; };
+		734E42B11D294F6600575101 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42B01D294F6600575101 /* Config.swift */; };
+		734E42B31D29500A00575101 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42B21D29500A00575101 /* ServerResponse.swift */; };
+		734E42B51D29506700575101 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42B41D29506700575101 /* CustomError.swift */; };
+		734E42B71D2957CE00575101 /* ServerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42B61D2957CE00575101 /* ServerCard.swift */; };
+		734E42B91D295B3200575101 /* CardsSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42B81D295B3200575101 /* CardsSearchViewModel.swift */; };
+		734E42BB1D295BFC00575101 /* CardsSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42BA1D295BFC00575101 /* CardsSearchService.swift */; };
+		734E42BD1D2961CA00575101 /* ErrorTypeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42BC1D2961CA00575101 /* ErrorTypeAdditions.swift */; };
+		734E42BF1D29626700575101 /* UIViewControllerAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42BE1D29626700575101 /* UIViewControllerAdditions.swift */; };
+		96C845F119C2CC94E0B0E5E0 /* Pods_MTGHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6471808C217106E91BDB2830 /* Pods_MTGHelper.framework */; };
 		B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */; };
 		B561E7E4E82B24E019C8BDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561E61C59A4EA67DA02E983 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -26,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6471808C217106E91BDB2830 /* Pods_MTGHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTGHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		734E426F1D254F1D00575101 /* MTGHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTGHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734E427C1D254F1E00575101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		734E42831D254F1E00575101 /* MTGHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTGHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,9 +44,20 @@
 		734E42891D254F1E00575101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		734E42A21D26BBA900575101 /* CardsSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSearchViewController.swift; sourceTree = "<group>"; };
 		734E42A31D26BBA900575101 /* CardsSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardsSearchViewController.xib; sourceTree = "<group>"; };
+		734E42AE1D293E5100575101 /* DeckbrewAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckbrewAPI.swift; sourceTree = "<group>"; };
+		734E42B01D294F6600575101 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		734E42B21D29500A00575101 /* ServerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		734E42B41D29506700575101 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		734E42B61D2957CE00575101 /* ServerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCard.swift; sourceTree = "<group>"; };
+		734E42B81D295B3200575101 /* CardsSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSearchViewModel.swift; sourceTree = "<group>"; };
+		734E42BA1D295BFC00575101 /* CardsSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSearchService.swift; sourceTree = "<group>"; };
+		734E42BC1D2961CA00575101 /* ErrorTypeAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTypeAdditions.swift; sourceTree = "<group>"; };
+		734E42BE1D29626700575101 /* UIViewControllerAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerAdditions.swift; sourceTree = "<group>"; };
+		A9BCA063800048BB9A2A4E61 /* Pods-MTGHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTGHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTGHelper/Pods-MTGHelper.release.xcconfig"; sourceTree = "<group>"; };
 		B561E219EB1F8292FE2B0353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		B561E61C59A4EA67DA02E983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7F7CB27D6BB8F0556391AE1 /* Pods-MTGHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTGHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTGHelper/Pods-MTGHelper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C845F119C2CC94E0B0E5E0 /* Pods_MTGHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +79,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B4F965A754A2C8FAD1118B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6471808C217106E91BDB2830 /* Pods_MTGHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EC0BD7CFCD08D89B876D13E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7F7CB27D6BB8F0556391AE1 /* Pods-MTGHelper.debug.xcconfig */,
+				A9BCA063800048BB9A2A4E61 /* Pods-MTGHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		734E42661D254F1D00575101 = {
 			isa = PBXGroup;
 			children = (
 				734E42711D254F1E00575101 /* MTGHelper */,
 				734E42861D254F1E00575101 /* MTGHelperTests */,
 				734E42701D254F1D00575101 /* Products */,
+				0EC0BD7CFCD08D89B876D13E /* Pods */,
+				0B4F965A754A2C8FAD1118B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,13 +135,77 @@
 			path = MTGHelperTests;
 			sourceTree = "<group>";
 		};
+		B561E077F403642DCF2994E1 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B561E59C1AADB1310B3CC7EA /* Search */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B561E1D263B53AD4FFD715F6 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				734E42B21D29500A00575101 /* ServerResponse.swift */,
+				734E42B61D2957CE00575101 /* ServerCard.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
 		B561E27BE7FFEFFF58A50FA4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */,
 				B561EF5B32E7FDA29C29E8D3 /* UI */,
+				B561EA5BAAA76D8A71DFB163 /* API */,
+				734E42B01D294F6600575101 /* Config.swift */,
+				B561E549ADB79F43897A4834 /* Models */,
+				B561E9BB1A76F5BD0D1D50B9 /* Services */,
+				B561E288E677B6E2086D6872 /* Extensions */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		B561E288E677B6E2086D6872 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				734E42BC1D2961CA00575101 /* ErrorTypeAdditions.swift */,
+				734E42BE1D29626700575101 /* UIViewControllerAdditions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B561E549ADB79F43897A4834 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B561E1D263B53AD4FFD715F6 /* Server */,
+				734E42B41D29506700575101 /* CustomError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B561E59C1AADB1310B3CC7EA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				734E42B81D295B3200575101 /* CardsSearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B561E9BB1A76F5BD0D1D50B9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				734E42BA1D295BFC00575101 /* CardsSearchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B561EA5BAAA76D8A71DFB163 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				734E42AE1D293E5100575101 /* DeckbrewAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		B561EAAD6DA8A536B3A4C6C5 /* View Controllers */ = {
@@ -132,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				B561EAAD6DA8A536B3A4C6C5 /* View Controllers */,
+				B561E077F403642DCF2994E1 /* View Models */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -143,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 734E428C1D254F1E00575101 /* Build configuration list for PBXNativeTarget "MTGHelper" */;
 			buildPhases = (
+				AB89408F12629C5902FC6A30 /* Check Pods Manifest.lock */,
 				734E426B1D254F1D00575101 /* Sources */,
 				734E426C1D254F1D00575101 /* Frameworks */,
 				734E426D1D254F1D00575101 /* Resources */,
+				ABCFC6EA6EE10964AA4A33DB /* Embed Pods Frameworks */,
+				0A70465A45E6160A89BB4B73 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,13 +342,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A70465A45E6160A89BB4B73 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTGHelper/Pods-MTGHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB89408F12629C5902FC6A30 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABCFC6EA6EE10964AA4A33DB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTGHelper/Pods-MTGHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		734E426B1D254F1D00575101 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */,
+				734E42B11D294F6600575101 /* Config.swift in Sources */,
+				734E42AF1D293E5200575101 /* DeckbrewAPI.swift in Sources */,
 				734E42A41D26BBA900575101 /* CardsSearchViewController.swift in Sources */,
+				734E42BD1D2961CA00575101 /* ErrorTypeAdditions.swift in Sources */,
+				734E42BF1D29626700575101 /* UIViewControllerAdditions.swift in Sources */,
+				734E42B91D295B3200575101 /* CardsSearchViewModel.swift in Sources */,
+				734E42B31D29500A00575101 /* ServerResponse.swift in Sources */,
+				734E42B51D29506700575101 /* CustomError.swift in Sources */,
+				734E42BB1D295BFC00575101 /* CardsSearchService.swift in Sources */,
+				734E42B71D2957CE00575101 /* ServerCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +524,7 @@
 		};
 		734E428D1D254F1E00575101 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F7CB27D6BB8F0556391AE1 /* Pods-MTGHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/MTGHelper/Supporting Files/Info.plist";
@@ -368,6 +536,7 @@
 		};
 		734E428E1D254F1E00575101 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9BCA063800048BB9A2A4E61 /* Pods-MTGHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/MTGHelper/Supporting Files/Info.plist";
