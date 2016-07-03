@@ -12,14 +12,25 @@ import RxSwift
 class CardsSearchViewModel {
     
     weak var searchController : CardsSearchViewControllerInterface?
+    var cards = [Card]()
+    
+    func numberOfCards() -> Int {
+        return cards.count
+    }
     
     func loadCardsByName(name : String?) {
         self.searchController?.showLoading()
         let observable = CardsSearchService().getCardsByName(name)
         let _ = observable.subscribeOn(ConcurrentDispatchQueueScheduler(globalConcurrentQueueQOS: .Background)).observeOn(MainScheduler.instance).subscribe(onNext: { (success) in
-//            self.appointments = self.mapServerAppointments(success)
+            if let serverCards = success.cards {
+                var cardsArray = [Card]()
+                for serverCard in serverCards {
+                    cardsArray.append(serverCard.toLocal())
+                }
+                self.cards = cardsArray
+            }
             self.searchController?.hideLoading()
-//            self.appointmentsController?.reloadData()
+            self.searchController?.reloadData()
             }, onError: { (error) in
                 self.searchController?.hideLoading()
                 self.searchController?.showError(error.message())

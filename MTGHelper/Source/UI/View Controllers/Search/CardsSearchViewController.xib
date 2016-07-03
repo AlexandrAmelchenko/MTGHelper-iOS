@@ -18,12 +18,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter first letters of card name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qca-EL-eyr">
-                    <rect key="frame" x="20" y="64" width="520" height="32"/>
+                    <rect key="frame" x="20" y="80" width="520" height="32"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I6-CE-9N3">
-                    <rect key="frame" x="540" y="64" width="40" height="32"/>
+                    <rect key="frame" x="540" y="80" width="40" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="OTu-ZG-85r"/>
                         <constraint firstAttribute="height" constant="32" id="jOf-Ld-J8F"/>
@@ -33,9 +33,13 @@
                         <action selector="searchButtonClicked:" destination="-1" eventType="touchUpInside" id="YbL-8o-vUi"/>
                     </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Kh-SR-F9B">
-                    <rect key="frame" x="0.0" y="104" width="600" height="496"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Kh-SR-F9B" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="120" width="600" height="480"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="icj-mi-y29"/>
+                        <outlet property="delegate" destination="-1" id="pXv-H8-hZ2"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,7 +50,7 @@
                 <constraint firstItem="Qca-EL-eyr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Rkq-n1-Esh"/>
                 <constraint firstAttribute="trailing" secondItem="3I6-CE-9N3" secondAttribute="trailing" constant="20" id="dFa-kf-v4A"/>
                 <constraint firstItem="3I6-CE-9N3" firstAttribute="leading" secondItem="Qca-EL-eyr" secondAttribute="trailing" id="dxu-eE-1WU"/>
-                <constraint firstItem="Qca-EL-eyr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="e25-87-GPf"/>
+                <constraint firstItem="Qca-EL-eyr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="e25-87-GPf"/>
                 <constraint firstItem="3I6-CE-9N3" firstAttribute="height" secondItem="Qca-EL-eyr" secondAttribute="height" id="gKt-HY-zWe"/>
                 <constraint firstItem="3I6-CE-9N3" firstAttribute="centerY" secondItem="Qca-EL-eyr" secondAttribute="centerY" id="lId-Mq-vMT"/>
                 <constraint firstAttribute="bottom" secondItem="0Kh-SR-F9B" secondAttribute="bottom" id="sWc-Jw-lxd"/>

@@ -1,5 +1,5 @@
 //
-//  ServerCard.swift
+//  ServerCardsList.swift
 //  MTGHelper
 //
 //  Created by Alex Amelchenko on 03/07/16.
@@ -9,27 +9,18 @@
 import Foundation
 import ObjectMapper
 
-class ServerCard: Mappable {
+class ServerCardsList: Mappable {
     
-    var name : String?
+    var cards : [ServerCard]?
     
     init(){
     }
     
     required init?(_ map: Map) {
-        
     }
     
     func mapping(map: Map) {
-        name <- map["name"]
+        cards <- map["cards"]
     }
     
-}
-
-extension ServerCard {
-    func toLocal() -> Card {
-        let card = Card()
-        card.baseName = name
-        return card
-    }
 }

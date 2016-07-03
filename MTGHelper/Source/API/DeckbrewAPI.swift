@@ -53,7 +53,7 @@ extension Call: TargetType {
     public var path: String {
         switch self {
         case .CardsByName(_):
-            return "/mtg/cards/typeahead"
+            return "/cards"
         }
     }
     
@@ -69,7 +69,7 @@ extension Call: TargetType {
         switch self {
         case .CardsByName(let name):
             return [
-                "q" : name ?? ""
+                "name" : name ?? ""
             ]
         default:
             return nil
@@ -106,7 +106,7 @@ extension Observable {
                 if (moyaResponse.statusCode >= 200 && moyaResponse.statusCode <= 299) {
                     do {
                         let response = try moyaResponse.mapString()
-                        var o: T = Mapper<T>().map(response)!
+                        let o: T = Mapper<T>().map(response)!
                         return Observable<T>.just(o)
                     } catch {
                         //TODO
@@ -140,7 +140,7 @@ extension Observable {
                         guard let b = Mapper<T>().mapArray(response) else {
                             return Observable<[T]>.error(CustomError(message: "error"))
                         }
-                        var a: [T] = b
+                        let a: [T] = b
                         return Observable<[T]>.just(a)
                     } catch {
                         //TODO

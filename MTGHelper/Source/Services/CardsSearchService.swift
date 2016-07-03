@@ -11,8 +11,8 @@ import RxSwift
 
 class CardsSearchService: NSObject {
     
-    func getCardsByName(name : String?) -> Observable<[ServerCard]> {
-        return apiProvider.requestArray(.CardsByName(name))
+    func getCardsByName(name : String?) -> Observable<ServerCardsList> {
+        return apiProvider.requestObject(.CardsByName(name))
     }
 
 }

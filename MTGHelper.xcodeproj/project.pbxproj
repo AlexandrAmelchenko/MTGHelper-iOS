@@ -20,6 +20,10 @@
 		734E42BB1D295BFC00575101 /* CardsSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42BA1D295BFC00575101 /* CardsSearchService.swift */; };
 		734E42BD1D2961CA00575101 /* ErrorTypeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42BC1D2961CA00575101 /* ErrorTypeAdditions.swift */; };
 		734E42BF1D29626700575101 /* UIViewControllerAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42BE1D29626700575101 /* UIViewControllerAdditions.swift */; };
+		734E42C11D29700F00575101 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42C01D29700F00575101 /* Card.swift */; };
+		734E42C31D2970D900575101 /* ServerCardsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42C21D2970D900575101 /* ServerCardsList.swift */; };
+		734E42C61D2982B300575101 /* SearchCardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E42C41D2982B300575101 /* SearchCardsTableViewCell.swift */; };
+		734E42C71D2982B400575101 /* SearchCardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 734E42C51D2982B300575101 /* SearchCardsTableViewCell.xib */; };
 		96C845F119C2CC94E0B0E5E0 /* Pods_MTGHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6471808C217106E91BDB2830 /* Pods_MTGHelper.framework */; };
 		B561E2590F8426481A1C9EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561ECB4FD71FF8E6CDEF1CE /* AppDelegate.swift */; };
 		B561E7E4E82B24E019C8BDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561E61C59A4EA67DA02E983 /* Assets.xcassets */; };
@@ -53,6 +57,10 @@
 		734E42BA1D295BFC00575101 /* CardsSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsSearchService.swift; sourceTree = "<group>"; };
 		734E42BC1D2961CA00575101 /* ErrorTypeAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTypeAdditions.swift; sourceTree = "<group>"; };
 		734E42BE1D29626700575101 /* UIViewControllerAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerAdditions.swift; sourceTree = "<group>"; };
+		734E42C01D29700F00575101 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		734E42C21D2970D900575101 /* ServerCardsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCardsList.swift; sourceTree = "<group>"; };
+		734E42C41D2982B300575101 /* SearchCardsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCardsTableViewCell.swift; sourceTree = "<group>"; };
+		734E42C51D2982B300575101 /* SearchCardsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCardsTableViewCell.xib; sourceTree = "<group>"; };
 		A9BCA063800048BB9A2A4E61 /* Pods-MTGHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTGHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTGHelper/Pods-MTGHelper.release.xcconfig"; sourceTree = "<group>"; };
 		B561E219EB1F8292FE2B0353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		B561E61C59A4EA67DA02E983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,6 +156,7 @@
 			children = (
 				734E42B21D29500A00575101 /* ServerResponse.swift */,
 				734E42B61D2957CE00575101 /* ServerCard.swift */,
+				734E42C21D2970D900575101 /* ServerCardsList.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -175,11 +184,21 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B561E37E619A8626B64F41BA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				734E42C41D2982B300575101 /* SearchCardsTableViewCell.swift */,
+				734E42C51D2982B300575101 /* SearchCardsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B561E549ADB79F43897A4834 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B561E1D263B53AD4FFD715F6 /* Server */,
 				734E42B41D29506700575101 /* CustomError.swift */,
+				734E42C01D29700F00575101 /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -234,11 +253,20 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		B561EF38A770253282528984 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B561E37E619A8626B64F41BA /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B561EF5B32E7FDA29C29E8D3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				B561EAAD6DA8A536B3A4C6C5 /* View Controllers */,
 				B561E077F403642DCF2994E1 /* View Models */,
+				B561EF38A770253282528984 /* Views */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -330,6 +358,7 @@
 				734E42A51D26BBA900575101 /* CardsSearchViewController.xib in Resources */,
 				734E427D1D254F1E00575101 /* LaunchScreen.storyboard in Resources */,
 				B561E7E4E82B24E019C8BDAF /* Assets.xcassets in Resources */,
+				734E42C71D2982B400575101 /* SearchCardsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,11 +430,14 @@
 				734E42A41D26BBA900575101 /* CardsSearchViewController.swift in Sources */,
 				734E42BD1D2961CA00575101 /* ErrorTypeAdditions.swift in Sources */,
 				734E42BF1D29626700575101 /* UIViewControllerAdditions.swift in Sources */,
+				734E42C31D2970D900575101 /* ServerCardsList.swift in Sources */,
 				734E42B91D295B3200575101 /* CardsSearchViewModel.swift in Sources */,
+				734E42C11D29700F00575101 /* Card.swift in Sources */,
 				734E42B31D29500A00575101 /* ServerResponse.swift in Sources */,
 				734E42B51D29506700575101 /* CustomError.swift in Sources */,
 				734E42BB1D295BFC00575101 /* CardsSearchService.swift in Sources */,
 				734E42B71D2957CE00575101 /* ServerCard.swift in Sources */,
+				734E42C61D2982B300575101 /* SearchCardsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
