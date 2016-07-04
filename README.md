@@ -1,2 +1,2 @@
 # MTGHelper-iOS
-iOS app that may be helpful for Magic The gathering players
+iOS app that may be helpful for Magic The Gathering players
