@@ -12,11 +12,11 @@ class SearchCardsTableViewCell: UITableViewCell {
     
     @IBOutlet var nameLabel : UILabel!
     @IBOutlet var previewImageView : UIImageView!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

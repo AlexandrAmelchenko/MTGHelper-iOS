@@ -11,5 +11,5 @@ import Foundation
 class CardDetailsViewModel: NSObject {
     
     var card : Card?
-
+    
 }

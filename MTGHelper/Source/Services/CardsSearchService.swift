@@ -14,5 +14,5 @@ class CardsSearchService: NSObject {
     func getCardsByName(name : String?) -> Observable<ServerCardsList> {
         return apiProvider.requestObject(.CardsByName(name))
     }
-
+    
 }

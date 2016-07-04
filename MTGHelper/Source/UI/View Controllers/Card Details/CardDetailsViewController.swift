@@ -12,15 +12,15 @@ class CardDetailsViewController: UIViewController {
     
     @IBOutlet var cardImageView : UIImageView!
     var viewModel = CardDetailsViewModel()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cardImageView.load(viewModel.card?.imageSubUrlString, placeholderImageName: "detailsCardBack")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-
+    
 }

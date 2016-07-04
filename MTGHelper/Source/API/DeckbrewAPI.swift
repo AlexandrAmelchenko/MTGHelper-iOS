@@ -63,7 +63,7 @@ extension Call: TargetType {
             return .GET
         }
     }
-
+    
     
     public var parameters: [String:AnyObject]? {
         switch self {
@@ -109,7 +109,6 @@ extension Observable {
                         let o: T = Mapper<T>().map(response)!
                         return Observable<T>.just(o)
                     } catch {
-                        //TODO
                     }
                 } else {
                     do {
@@ -119,7 +118,6 @@ extension Observable {
                         }
                         return Observable<T>.error(CustomError(message: o.message))
                     } catch {
-                        //TODO
                     }
                 }
                 return Observable<T>.error(CustomError(message: "Error"))
