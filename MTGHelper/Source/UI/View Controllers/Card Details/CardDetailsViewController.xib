@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardDetailsViewController" customModule="MTGHelper" customModuleProvider="target">
             <connections>
                 <outlet property="cardImageView" destination="vk2-Uy-m2a" id="46w-8j-Txs"/>
+                <outlet property="nameLabel" destination="a0l-QS-JRB" id="qvY-ah-gZb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,25 +21,40 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlb-a9-Z9t">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="454"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="489"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkR-U3-QtB">
-                                    <rect key="frame" x="20" y="0.0" width="560" height="454"/>
+                                    <rect key="frame" x="20" y="0.0" width="560" height="489"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vk2-Uy-m2a">
-                                            <rect key="frame" x="140" y="14" width="280" height="400"/>
+                                            <rect key="frame" x="140" y="49" width="280" height="400"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="280" id="IXM-AV-GZT"/>
                                                 <constraint firstAttribute="height" constant="400" id="VYm-mr-XVs"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0l-QS-JRB">
+                                            <rect key="frame" x="0.0" y="14" width="560" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
+                                        <constraint firstItem="a0l-QS-JRB" firstAttribute="leading" secondItem="zkR-U3-QtB" secondAttribute="leading" id="4y3-45-YMt"/>
+                                        <constraint firstItem="a0l-QS-JRB" firstAttribute="top" secondItem="zkR-U3-QtB" secondAttribute="top" constant="14" id="7oJ-Xl-Tda"/>
+                                        <constraint firstItem="vk2-Uy-m2a" firstAttribute="top" secondItem="a0l-QS-JRB" secondAttribute="bottom" constant="14" id="RJQ-lE-pLi"/>
                                         <constraint firstItem="vk2-Uy-m2a" firstAttribute="centerX" secondItem="zkR-U3-QtB" secondAttribute="centerX" id="ihW-tR-yOs"/>
+                                        <constraint firstAttribute="trailing" secondItem="a0l-QS-JRB" secondAttribute="trailing" id="m28-ae-Oas"/>
                                         <constraint firstItem="vk2-Uy-m2a" firstAttribute="top" secondItem="zkR-U3-QtB" secondAttribute="top" constant="14" id="vSs-gb-QeL"/>
                                         <constraint firstAttribute="bottom" secondItem="vk2-Uy-m2a" secondAttribute="bottom" constant="40" id="wp6-pz-YCl"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="vSs-gb-QeL"/>
+                                        </mask>
+                                    </variation>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

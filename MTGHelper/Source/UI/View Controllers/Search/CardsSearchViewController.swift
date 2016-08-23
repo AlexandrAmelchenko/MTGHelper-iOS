@@ -98,6 +98,9 @@ class CardsSearchViewController: UIViewController, CardsSearchViewControllerInte
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        guard viewModel.cards[indexPath.row].multiverseId != nil else {
+            return
+        }
         let detailsController = CardDetailsViewController(nibName: "CardDetailsViewController", bundle: nil)
         detailsController.viewModel.card = viewModel.cards[indexPath.row]
         self.navigationController?.pushViewController(detailsController, animated: true)

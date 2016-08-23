@@ -12,5 +12,6 @@ class Card: NSObject {
     
     var baseName : String?
     var imageSubUrlString : String?
+    var multiverseId : Int?
     
 }

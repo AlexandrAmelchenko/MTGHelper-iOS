@@ -352,6 +352,7 @@
 				TargetAttributes = {
 					734E426E1D254F1D00575101 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 83KKF36338;
 					};
 					734E42821D254F1E00575101 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -591,10 +592,13 @@
 			baseConfigurationReference = D7F7CB27D6BB8F0556391AE1 /* Pods-MTGHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/MTGHelper/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = none.MTGHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = MTGHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -603,10 +607,13 @@
 			baseConfigurationReference = A9BCA063800048BB9A2A4E61 /* Pods-MTGHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/MTGHelper/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = none.MTGHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = MTGHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

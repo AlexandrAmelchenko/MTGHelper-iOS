@@ -13,6 +13,7 @@ class ServerCard: Mappable {
     
     var name : String?
     var imageUrl : String?
+    var multiverseId : Int?
     
     init(){
     }
@@ -24,6 +25,7 @@ class ServerCard: Mappable {
     func mapping(map: Map) {
         name <- map["name"]
         imageUrl <- map["imageUrl"]
+        multiverseId <- map["multiverseid"]
     }
     
 }
@@ -36,6 +38,7 @@ extension ServerCard {
             let fullUrlArr = imageFullUrl.characters.split{$0 == "/"}.map(String.init)
             card.imageSubUrlString = fullUrlArr[fullUrlArr.endIndex - 1]
         }
+        card.multiverseId = multiverseId
         return card
     }
 }
