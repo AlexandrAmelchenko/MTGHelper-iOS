@@ -12,7 +12,9 @@ import RxSwift
 class CardsSearchService: NSObject {
     
     func getCardsByName(name : String?) -> Observable<ServerCardsList> {
-        return apiProvider.requestObject(.CardsByName(name))
+        return DeckbrewAPI.sharedInstance.client.get("/cards")
+            .query("name", name)
+            .requestJson()
     }
     
 }

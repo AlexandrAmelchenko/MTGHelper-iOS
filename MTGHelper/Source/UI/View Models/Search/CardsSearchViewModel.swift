@@ -11,6 +11,7 @@ import RxSwift
 
 class CardsSearchViewModel {
     
+    
     weak var searchController : CardsSearchViewControllerInterface?
     var cards = [Card]()
     
@@ -33,7 +34,7 @@ class CardsSearchViewModel {
             self.searchController?.reloadData()
             }, onError: { (error) in
                 self.searchController?.hideLoading()
-                self.searchController?.showError(error.message())
+                self.searchController?.showError("error while loading the data")
             }, onCompleted: {
         }) {
         }
